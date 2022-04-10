@@ -12,6 +12,7 @@ img {
     margin-left: auto;
     padding-right: 1em;
     padding-left: 1em;
+    max-width: 1024px;
 }
 
 .header {
@@ -149,12 +150,12 @@ img {
 
 .people-cards__title {
     color: rgba(31, 30, 30, 0.633);
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .people-cards__text {
     color: rgba(31, 30, 30, 0.702);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .people-cards__card {
@@ -320,6 +321,7 @@ img {
 
     .header {
         display: flex;
+        position: fixed;
     }
 
     .header__nav {
@@ -340,5 +342,11 @@ img {
 
     .header__nav a {
         background-color: #fff;
+    }
+
+    .people-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
     }
 }
