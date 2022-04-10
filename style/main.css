@@ -20,6 +20,10 @@ img {
     width: 100%;
 }
 
+.js .header {
+    position: fixed;
+}
+
 .logo-text {
     text-transform: uppercase;
     background-color: rgb(106, 175, 200);
