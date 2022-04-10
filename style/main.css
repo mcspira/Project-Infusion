@@ -143,7 +143,8 @@ img {
     text-align: center;
     padding: 40px 25px 10px;
     border-left: 2px solid rgba(0, 0, 0, 0.184);
-
+    border-bottom: 2px solid rgba(0, 0, 0, 0.287);
+    border-right: 2px solid rgba(0, 0, 0, 0.127);
 }
 
 .people-cards__title {
@@ -157,4 +158,23 @@ img {
 }
 
 .people-cards__card {
+    margin-top: 10px;
+}
+
+.people-cards__card:hover {
+    outline: 5px solid rgb(106, 206, 193);
+    outline-offset: -5px;
+}
+
+.people-cards__card:hover .people-cards__avatar img {
+    transform: translateY(-50%);
+}
+
+.people-cards__card:hover .people-cards__title { 
+    color: rgb(77, 149, 140);
+    font-weight: 700;
+}
+
+.people-cards__card:hover .people-cards__text{
+    color: rgb(89, 172, 161);
 }
