@@ -33,7 +33,7 @@ img {
 }
 
 .header__nav {
-    clear: both;
+    clear: left;
 }
 
 .header__nav ul {
@@ -301,4 +301,44 @@ img {
     color: #454e51;
     display: block;
     font-weight: 600;
+}
+
+@media screen and (min-width: 1024px ){
+    .header {
+        position: sticky;
+    }
+
+    .logo-text {
+        width: 22%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .header__btnMenu {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+    }
+
+    .header__nav {
+        width: 75%;
+        display: flex;  
+        max-width: 900px;
+    }
+
+    .header__nav ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .header__nav li {
+        width: 100%;
+    }
+
+    .header__nav a {
+        background-color: #fff;
+    }
 }
