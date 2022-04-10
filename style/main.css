@@ -10,7 +10,7 @@ body {
 
 .logo-text {
     text-transform: uppercase;
-    background-color: rgb(95, 218, 177);
+    background-color: rgb(106, 175, 200);
     font-size: 24px;
     margin: 0;
     padding: 20px;
@@ -33,17 +33,23 @@ body {
 .header__nav li {
     list-style-type: none;
     background-color: rgb(75, 74, 74);
-    padding: 25px 0;
     text-align: center;
     border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
 }
 
 .header__nav a {
-    color: #fff;
+    color: rgb(181, 181, 181);
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
+    display: block;
+    padding: 25px 0;
+}
+
+.header__nav a:hover {
+    color:rgb(143, 225, 255);
+    transition: 250ms;
 }
 
 .header__btnMenu {
