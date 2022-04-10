@@ -178,3 +178,46 @@ img {
 .people-cards__card:hover .people-cards__text{
     color: rgb(89, 172, 161);
 }
+
+.content {
+    background-color: #f8f9f9;
+    padding: 20px 0 80px;
+}
+
+.content__title {
+    font-size: 21px;
+    color: rgba(31, 30, 30, 0.633);
+    padding-top: 40px;
+    font-weight: 600;
+}
+
+.content__text {
+    color: rgba(31, 30, 30, 0.633);
+    font-size: 16px;
+    word-spacing: 3px;
+}
+
+.button {
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 15px;
+    display: inline-block;
+    
+}
+.button:hover {
+    background-color: rgb(128, 127, 127);
+    transition: background 500ms;
+}
+
+.button-primary {
+    background-color: rgb(106, 175, 200);
+}
+
+.button-secundary {
+    background-color: rgb(89, 90, 90);
+
+}
