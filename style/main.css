@@ -18,6 +18,7 @@ img {
 .header {
     background-color: #fff;
     width: 100%;
+    z-index: 10;
 }
 
 .js .header {
@@ -84,6 +85,87 @@ img {
 .fas {
     font-size: 1.7em;
 }
+
+.js .laptop-slider{
+    overflow: hidden;
+    color: white;
+}
+
+.js .laptop-slider .slideshow{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+}
+
+.js .laptop-slider figure{
+    opacity: 0;
+    transition: 1s opacity;
+    width: 85%;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+    
+}
+.js .laptop-slider figure.show{
+    opacity: 1;
+    position: static;
+    
+}
+.js .laptop-slider .prev, .js .laptop-slider .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.js .laptop-slider .prev{
+    left: 10px;
+}
+.js .laptop-slider .next{
+    right: 10px;
+}
+
+.js .quote-slideshow{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+    box-sizing: border-box;
+    padding: 0 50px;
+    color: white;
+}
+.js .quote-slideshow figure h2{
+    margin-top: 0;
+}
+.js .quote-slideshow figure{
+    opacity: 0;
+    transition: 1s opacity;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 50px;
+    box-sizing: border-box;
+    margin: 0;
+}
+.js .quote-slideshow figure.show{
+    opacity: 1;
+    position: static;
+    
+}
+.js .quote-slideshow .prev, .js .quote-slideshow .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.js .quote-slideshow .prev{
+    left: 10px;
+}
+.js .quote-slideshow .next{
+    right: 10px;
+}
+
 
 .hero {
     height: 80vh;
@@ -327,11 +409,12 @@ img {
 
 @media screen and (min-width: 1024px ){
     .header {
-        position: sticky;
+        position: fixed;
+        display: flex;
     }
 
     .logo-text {
-        width: 22%;
+        width: 25%;
         display: flex;
         justify-content: end;
     }
@@ -346,7 +429,7 @@ img {
     }
 
     .header__nav {
-        width: 75%;
+        width: 100%;
         display: flex;  
         max-width: 900px;
     }
@@ -388,5 +471,8 @@ img {
 
     .footer .container > * {
         margin: 1.7em;
+    }
+    .js .laptop-slider figure {
+        width: 100%;
     }
 }
